@@ -16,8 +16,7 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('setono_sylius_reserve_stock');
+        $treeBuilder = new TreeBuilder('setono_sylius_reserve_stock');
 
         $rootNode
             ->addDefaultsIfNotSet()

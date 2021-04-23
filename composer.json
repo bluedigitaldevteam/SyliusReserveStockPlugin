@@ -1,7 +1,7 @@
 {
-    "name": "setono/sylius-reserve-stock-plugin",
+    "name": "bluedigitaldevteam/syliusreservestockplugin",
     "type": "sylius-plugin",
-    "description": "Reserve Stock Plugin for Sylius.",
+    "description": "Reserve Stock Plugin for Sylius. (forked)",
     "license": "MIT",
     "authors": [
         {

@@ -18,7 +18,9 @@ final class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('setono_sylius_reserve_stock');
 
-        $treeBuilder
+        $rootNode = method_exists(TreeBuilder::class, 'getRootNode') ? $treeBuilder->getRootNode() : $treeBuilder->root('setono_sylius_reserve_stock');
+        
+        $rootNode
             ->addDefaultsIfNotSet()
             ->children()
                 ->integerNode('ttl')
